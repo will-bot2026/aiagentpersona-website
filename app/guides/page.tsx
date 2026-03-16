@@ -41,6 +41,7 @@ const guidesData = [
     readTime: 12,
     createdAt: '2025-07-20T00:00:00Z',
   },
+
   {
     slug: 'bitcoin-basics',
     title: 'Bitcoin Basics: What New Investors Wish They\'d Known First',
@@ -51,7 +52,7 @@ const guidesData = [
     emoji: '₿',
     tags: ['Bitcoin', 'Crypto', 'Investment', 'Security', 'Beginner'],
     pdfFile: '/guides/bitcoin-basics-new-investor-guide.pdf',
-    polarUrl: 'https://buy.polar.sh/polar_cl_bitcoin_basics_guide_prod104',
+    polarUrl: '#coming-soon', // Temporarily unavailable
     category: 'crypto',
     categoryLabel: 'Cryptocurrency & Investing',
     categoryColor: 'amber',
@@ -69,7 +70,7 @@ const guidesData = [
     emoji: '🤖',
     tags: ['AI Agents', 'Claude', 'ChatGPT', 'Comparison', 'Beginner'],
     pdfFile: '/guides/ai-agent-choice-guide-2026.pdf',
-    polarUrl: 'https://buy.polar.sh/polar_cl_ai_agent_choice_guide_prod105',
+    polarUrl: '#coming-soon', // Temporarily unavailable
     category: 'ai-tech',
     categoryLabel: 'AI & Technology',
     categoryColor: 'blue',
@@ -87,7 +88,7 @@ const guidesData = [
     emoji: '💪',
     tags: ['Fitness', 'Weight Loss', 'Fat Loss', 'Science-Based', 'Health'],
     pdfFile: '/guides/fat-loss-plateaus-science-guide.pdf',
-    polarUrl: 'https://buy.polar.sh/polar_cl_fat_loss_plateaus_guide_prod106',
+    polarUrl: '#coming-soon', // Temporarily unavailable
     category: 'health',
     categoryLabel: 'Health & Fitness',
     categoryColor: 'rose',
@@ -105,7 +106,7 @@ const guidesData = [
     emoji: '🛡️',
     tags: ['Crypto Safety', 'Scam Prevention', 'Elderly Care', 'Investment Security'],
     pdfFile: '/guides/crypto-scams-how-to-protect-your-elderly-parents--loved-one.pdf',
-    polarUrl: 'https://buy.polar.sh/polar_cl_crypto_scams_guide_prod007',
+    polarUrl: 'https://buy.polar.sh/polar_cl_PbGEKCrfxmd1KjR5x3dFcOl2JlsxtsWH7tgbB14Mjbu',
     category: 'crypto',
     categoryLabel: 'Cryptocurrency & Investing',
     categoryColor: 'amber',
@@ -469,14 +470,23 @@ export default function GuidesPage() {
 
                         {/* CTA Buttons */}
                         <div className="flex gap-3 mt-auto">
-                          <a
-                            href={guide.polarUrl}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className={`flex-1 ${colors.button} text-center py-3 rounded-lg font-semibold transition duration-200`}
-                          >
-                            Buy ${guide.price}
-                          </a>
+                          {guide.polarUrl === '#coming-soon' ? (
+                            <button
+                              disabled
+                              className={`flex-1 ${colors.button} opacity-50 cursor-not-allowed text-center py-3 rounded-lg font-semibold`}
+                            >
+                              Coming Soon
+                            </button>
+                          ) : (
+                            <a
+                              href={guide.polarUrl}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className={`flex-1 ${colors.button} text-center py-3 rounded-lg font-semibold transition duration-200`}
+                            >
+                              Buy ${guide.price}
+                            </a>
+                          )}
                           <Link
                             href={`/guides/${guide.slug}`}
                             className={`flex-1 border-2 ${colors.border} text-center py-3 rounded-lg font-semibold transition duration-200 ${
