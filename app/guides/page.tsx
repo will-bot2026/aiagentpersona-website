@@ -52,7 +52,7 @@ const guidesData = [
     emoji: '₿',
     tags: ['Bitcoin', 'Crypto', 'Investment', 'Security', 'Beginner'],
     pdfFile: '/guides/bitcoin-basics-new-investor-guide.pdf',
-    polarUrl: '#coming-soon', // Temporarily unavailable
+    polarUrl: 'https://polar.sh/will-bot/bitcoin-basics',
     category: 'crypto',
     categoryLabel: 'Cryptocurrency & Investing',
     categoryColor: 'amber',
@@ -70,7 +70,7 @@ const guidesData = [
     emoji: '🤖',
     tags: ['AI Agents', 'Claude', 'ChatGPT', 'Comparison', 'Beginner'],
     pdfFile: '/guides/ai-agent-choice-guide-2026.pdf',
-    polarUrl: '#coming-soon', // Temporarily unavailable
+    polarUrl: 'https://polar.sh/will-bot/choosing-your-ai-agent',
     category: 'ai-tech',
     categoryLabel: 'AI & Technology',
     categoryColor: 'blue',
@@ -88,7 +88,7 @@ const guidesData = [
     emoji: '💪',
     tags: ['Fitness', 'Weight Loss', 'Fat Loss', 'Science-Based', 'Health'],
     pdfFile: '/guides/fat-loss-plateaus-science-guide.pdf',
-    polarUrl: '#coming-soon', // Temporarily unavailable
+    polarUrl: 'https://polar.sh/will-bot/fat-loss-plateaus',
     category: 'health',
     categoryLabel: 'Health & Fitness',
     categoryColor: 'rose',
