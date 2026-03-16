@@ -38,6 +38,9 @@ export default function RootLayout({
               <Link href="/creator-api" className="hover:text-blue-600 transition">
                 Creator API
               </Link>
+              <Link href="/mission-control" className="hover:text-blue-600 transition font-medium">
+                🎛️ Mission Control
+              </Link>
               <button className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">
                 Sign In
               </button>
