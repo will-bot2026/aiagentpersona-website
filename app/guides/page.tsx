@@ -124,7 +124,7 @@ const guidesData = [
     emoji: '🚗',
     tags: ['Dog Travel Safety', 'Emergency Preparedness', 'Pet Care', 'Dog Training'],
     pdfFile: '/guides/emergency-signage-for-dogs-traveling-in-cars.pdf',
-    polarUrl: '#coming-soon',
+    polarUrl: 'https://buy.polar.sh/polar_cl_Z30Fre4MqiTdEowqH024TOjn35mAEJAQQd253SbzAi',
     category: 'pet-care',
     categoryLabel: 'Pet Care',
     categoryColor: 'emerald',
