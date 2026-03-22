@@ -1,17 +1,13 @@
 /**
  * /api/clearlytics-dashboard
- * Pulls analytics data from the Clearlytics backend and returns it.
- * Results are cached for 5 minutes to avoid hammering the API.
+ * Pulls analytics data from Clearlytics Convex backend and returns it.
+ * Queries real data from Convex. Results cached for 5 minutes.
  */
 
 import { NextResponse } from 'next/server';
 
-const CLEARLYTICS_BASE_URL =
-  process.env.CLEARLYTICS_BASE_URL ||
-  'https://clearlytics-sigma.vercel.app';
-
-const CLEARLYTICS_SITE_ID =
-  process.env.CLEARLYTICS_SITE_ID || 'aiagentpersona-com';
+const CONVEX_URL = (process.env.CLEARLYTICS_CONVEX_URL || 'https://wry-whale-127.convex.cloud').trim();
+const CLEARLYTICS_SITE_ID = (process.env.CLEARLYTICS_SITE_ID || 'aiagentpersona-com').trim();
 
 // Simple in-memory cache
 let cache: { data: unknown; expiresAt: number } | null = null;
@@ -19,63 +15,79 @@ const CACHE_TTL_MS = 5 * 60 * 1000; // 5 minutes
 
 export const dynamic = 'force-dynamic';
 
-async function fetchAnalytics() {
-  // Try Clearlytics API endpoint for stats
-  // Clearlytics uses Convex — we'll call the health endpoint to verify connectivity,
-  // then attempt to pull stats via the public API if available.
+function getDateString(daysAgo: number): string {
+  const d = new Date(Date.now() - daysAgo * 24 * 60 * 60 * 1000);
+  return d.toISOString().split('T')[0];
+}
 
-  // Check cache first
+async function queryConvex(path: string, args: Record<string, unknown>) {
+  const resp = await fetch(`${CONVEX_URL}/api/query`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ path, args, format: 'json' }),
+  });
+  if (!resp.ok) throw new Error(`Convex query failed: ${resp.status}`);
+  const data = await resp.json();
+  if (data.status !== 'success') throw new Error(`Convex query error: ${JSON.stringify(data)}`);
+  return data.value;
+}
+
+async function fetchAnalytics() {
   if (cache && cache.expiresAt > Date.now()) {
     return cache.data;
   }
 
   try {
-    // Attempt to fetch from Clearlytics stats endpoint
-    // Note: Clearlytics uses Convex reactive queries internally, but exposes
-    // a REST-compatible interface via Next.js API routes.
-    const statsUrl = `${CLEARLYTICS_BASE_URL}/api/health`;
-    const healthRes = await fetch(statsUrl, {
-      next: { revalidate: 0 },
-    });
+    const today = getDateString(0);
+    const weekAgo = getDateString(7);
+    const monthAgo = getDateString(30);
 
-    if (!healthRes.ok) {
-      throw new Error(`Clearlytics health check failed: ${healthRes.status}`);
-    }
+    const [liveCount, todayStats, weekStats, monthStats] = await Promise.all([
+      queryConvex('stats:getLiveCount', { siteId: CLEARLYTICS_SITE_ID }),
+      queryConvex('stats:getStatsBySiteId', { siteId: CLEARLYTICS_SITE_ID, startDate: today, endDate: today }),
+      queryConvex('stats:getStatsBySiteId', { siteId: CLEARLYTICS_SITE_ID, startDate: weekAgo, endDate: today }),
+      queryConvex('stats:getStatsBySiteId', { siteId: CLEARLYTICS_SITE_ID, startDate: monthAgo, endDate: today }),
+    ]);
 
-    // Since Clearlytics uses Convex (no direct REST stats endpoint),
-    // we return the connected status with mock structure for now.
-    // The actual stats will populate once Convex is fully configured.
     const result = {
       uniqueVisitors: {
-        today: 0,
-        last7d: 0,
-        last30d: 0,
+        today: todayStats?.totalUniqueVisitors ?? 0,
+        last7d: weekStats?.totalUniqueVisitors ?? 0,
+        last30d: monthStats?.totalUniqueVisitors ?? 0,
       },
       pageViews: {
-        today: 0,
-        last7d: 0,
-        last30d: 0,
+        today: todayStats?.totalPageViews ?? 0,
+        last7d: weekStats?.totalPageViews ?? 0,
+        last30d: monthStats?.totalPageViews ?? 0,
       },
-      topPages: [] as Array<{ pathname: string; views: number }>,
-      topReferrers: [] as Array<{ hostname: string; views: number }>,
+      topPages: (monthStats?.topPages ?? []).map((p: any) => ({
+        pathname: p.pathname,
+        views: p.views,
+      })),
+      topReferrers: (monthStats?.topReferrers ?? []).map((r: any) => ({
+        hostname: r.hostname,
+        views: r.count,
+      })),
+      activeVisitors: liveCount?.activeVisitors ?? 0,
+      activePaths: liveCount?.activePaths ?? [],
+      devices: monthStats?.devices ?? { mobile: 0, tablet: 0, desktop: 0 },
       lastUpdated: new Date().toISOString(),
       status: 'connected',
       siteId: CLEARLYTICS_SITE_ID,
     };
 
-    // Cache the result
     cache = { data: result, expiresAt: Date.now() + CACHE_TTL_MS };
     return result;
   } catch (error) {
-    console.error('[clearlytics-dashboard] Error fetching analytics:', 
-      error instanceof Error ? error.message : 'Unknown error');
-    
-    // Return empty but valid structure
+    console.error('[clearlytics-dashboard] Error:', error instanceof Error ? error.message : 'Unknown');
     return {
       uniqueVisitors: { today: 0, last7d: 0, last30d: 0 },
       pageViews: { today: 0, last7d: 0, last30d: 0 },
       topPages: [],
       topReferrers: [],
+      activeVisitors: 0,
+      activePaths: [],
+      devices: { mobile: 0, tablet: 0, desktop: 0 },
       lastUpdated: new Date().toISOString(),
       status: 'error',
       error: error instanceof Error ? error.message : 'Connection failed',
