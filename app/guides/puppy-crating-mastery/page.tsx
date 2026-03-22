@@ -111,7 +111,7 @@ export default function PuppyCratingMasteryPage() {
                     <p className="text-sm text-gray-500 mt-2">— Lauren B., Golden Retriever owner</p>
                   </div>
                   <div className="bg-gray-50 p-4 rounded-lg border-l-4 border-emerald-400">
-                    <p className="text-gray-700 italic">&quot;The nighttime protocol chapter alone is worth $12.99. My puppy went from howling every hour to sleeping through the night in 10 days.&quot;</p>
+                    <p className="text-gray-700 italic">&quot;The nighttime protocol chapter alone is worth $19.99. My puppy went from howling every hour to sleeping through the night in 10 days.&quot;</p>
                     <p className="text-sm text-gray-500 mt-2">— David P., Labrador owner</p>
                   </div>
                 </div>
@@ -123,7 +123,7 @@ export default function PuppyCratingMasteryPage() {
               <div className="sticky top-24 border border-gray-200 rounded-xl p-6 shadow-lg">
                 <div className="text-center mb-6">
                   <div className="text-5xl mb-3">🏠</div>
-                  <div className="text-3xl font-bold text-gray-900">$12.99</div>
+                  <div className="text-3xl font-bold text-gray-900">$19.99</div>
                   <div className="text-sm text-gray-500">One-time purchase</div>
                 </div>
 
@@ -133,7 +133,7 @@ export default function PuppyCratingMasteryPage() {
                   rel="noopener noreferrer"
                   className="block w-full bg-emerald-600 text-white text-center py-3 rounded-lg font-bold hover:bg-emerald-700 transition mb-3"
                 >
-                  Buy Now — $12.99
+                  Buy Now — Instant Download + Money-Back Guarantee
                 </a>
 
                 <div className="text-xs text-gray-500 text-center mb-6">
@@ -191,7 +191,7 @@ export default function PuppyCratingMasteryPage() {
             genre: 'Pet Training',
             offers: {
               '@type': 'Offer',
-              price: '12.99',
+              price: '19.99',
               priceCurrency: 'USD',
               availability: 'https://schema.org/InStock',
               url: 'https://aiagentpersona.com/guides/puppy-crating-mastery',

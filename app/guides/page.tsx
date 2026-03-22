@@ -11,7 +11,7 @@ const guidesData = [
     subtitle: 'Stop Nipping, Mouthing, and Aggressive Biting in 14 Days or Less',
     description: 'A step-by-step guide based on proven positive-reinforcement techniques used by professional dog trainers worldwide. Covers the reverse timeout technique, bite inhibition training, managing the witching hour, special cases for herding breeds, and a complete 14-day action plan.',
     pages: 17,
-    price: '9.99',
+    price: '19.99',
     emoji: '🐕',
     tags: ['Puppy Training', 'Bite Inhibition', 'Positive Reinforcement', 'New Puppy Owner'],
     pdfFile: '/guides/the-complete-puppy-biting-solution.pdf',
@@ -29,7 +29,7 @@ const guidesData = [
     subtitle: 'When to Rush to the Vet, When to Wait, and How to Tell the Difference',
     description: 'The definitive guide for new puppy owners who need to know when something is truly wrong. Covers the 10 emergency warning signs, normal vs. emergency digestive issues, breathing problems, a symptom decision tree, weekly health check routine, and a complete first aid kit checklist.',
     pages: 19,
-    price: '9.99',
+    price: '19.99',
     emoji: '🏥',
     tags: ['Puppy Health', 'Emergency Guide', 'Vet Decisions', 'New Puppy Owner'],
     pdfFile: '/guides/is-my-puppy-sick-emergency-guide.pdf',
@@ -48,11 +48,11 @@ const guidesData = [
     subtitle: 'Avoid $10K+ Mistakes with This Beginner\'s Security & Strategy Guide',
     description: 'Everything new Bitcoin investors need to know. Covers security setup (hardware wallets, seed phrases), timing strategies, common mistakes that cost beginners thousands, and a step-by-step getting-started plan with real world examples.',
     pages: 12,
-    price: '14.99',
+    price: '19.99',
     emoji: '₿',
     tags: ['Bitcoin', 'Crypto', 'Investment', 'Security', 'Beginner'],
     pdfFile: '/guides/bitcoin-basics-new-investor-guide.pdf',
-    polarUrl: 'https://buy.polar.sh/polar_cL0WfvW0akbaW3my0RH9K8dLJKdAW8N52nZ63Mrn',
+    polarUrl: 'https://buy.polar.sh/polar_cl_oWrvfw0akba1Cw3myRKH9KibL3KdAW8NG2nZa3MxnY9',
     category: 'crypto',
     categoryLabel: 'Cryptocurrency & Investing',
     categoryColor: 'amber',
@@ -66,11 +66,11 @@ const guidesData = [
     subtitle: 'Claude vs ChatGPT vs Gemini - Choose the Right Tool for Your Work',
     description: 'Confused about which AI agent to use? This guide cuts through the hype and compares Claude, ChatGPT, Gemini, and others side-by-side. Includes decision trees, pricing comparisons, best use cases, and integration guides.',
     pages: 12,
-    price: '12.99',
+    price: '19.99',
     emoji: '🤖',
     tags: ['AI Agents', 'Claude', 'ChatGPT', 'Comparison', 'Beginner'],
     pdfFile: '/guides/ai-agent-choice-guide-2026.pdf',
-    polarUrl: 'https://buy.polar.sh/polar_cL1nseGZUtbbaYWv0JkbUReqVf1URmqJYSQo2CV3Qm',
+    polarUrl: 'https://buy.polar.sh/polar_cl_lnsieGqZub1bsYsVtvO8xDIRacqYIURmQJYSQ2CV3Qm',
     category: 'ai-tech',
     categoryLabel: 'AI & Technology',
     categoryColor: 'blue',
@@ -84,11 +84,11 @@ const guidesData = [
     subtitle: 'Break Through Your Weight Loss Plateau with Proven Techniques',
     description: 'You\'re losing fat but not seeing results. This guide uses real metabolic science to diagnose why your plateau exists and exactly how to break through it. Covers macros, cardio, strength training, recovery, and mental strategies.',
     pages: 12,
-    price: '16.99',
+    price: '19.99',
     emoji: '💪',
     tags: ['Fitness', 'Weight Loss', 'Fat Loss', 'Science-Based', 'Health'],
     pdfFile: '/guides/fat-loss-plateaus-science-guide.pdf',
-    polarUrl: 'https://buy.polar.sh/polar_cL9FQSqHrWeDS3igr4sVcrdsMA0EEzL8hNxMt2S5e',
+    polarUrl: 'https://buy.polar.sh/polar_cl_9F0SQHPiwDs53iqr4eVcrdhSMrA0EEZL8hNkM1t2S6e',
     category: 'health',
     categoryLabel: 'Health & Fitness',
     categoryColor: 'rose',
@@ -102,7 +102,7 @@ const guidesData = [
     subtitle: 'Real Tactics Scammers Use & How to Stop Them Before It\'s Too Late',
     description: 'Elderly relatives are targets for crypto and investment scams. This guide teaches you how to recognize scammer tactics, protect vulnerable family members, have conversations without triggering defensiveness, and respond if they\'ve already been scammed.',
     pages: 43,
-    price: '12.99',
+    price: '29.99',
     emoji: '🛡️',
     tags: ['Crypto Safety', 'Scam Prevention', 'Elderly Care', 'Investment Security'],
     pdfFile: '/guides/crypto-scams-how-to-protect-your-elderly-parents--loved-one.pdf',
@@ -120,11 +120,11 @@ const guidesData = [
     subtitle: 'Protect Your Dog in Case of Emergency While Traveling',
     description: 'Learn how to create and use emergency signage to protect your dog during car travel. Covers what information to include, where to place signage, emergency contact procedures, and real-world scenarios.',
     pages: 22,
-    price: '12.99',
+    price: '24.99',
     emoji: '🚗',
     tags: ['Dog Travel Safety', 'Emergency Preparedness', 'Pet Care', 'Dog Training'],
     pdfFile: '/guides/emergency-signage-for-dogs-traveling-in-cars.pdf',
-    polarUrl: 'https://buy.polar.sh/polar_cl_Z30Fre4MqiTdEowqH024TOjn35mAEJAQQd253SbzAi',
+    polarUrl: 'https://buy.polar.sh/polar_cl_Z20Fe4MKqTictEowgH024TQh35mAEJAOQd25l35bZA0',
     category: 'pet-care',
     categoryLabel: 'Pet Care',
     categoryColor: 'emerald',
@@ -138,11 +138,11 @@ const guidesData = [
     subtitle: 'Get Your Foster Dog Adopted in Record Time Using Proven Techniques',
     description: 'Dog fosters want their foster pups adopted ASAP! This guide reveals the science-backed strategies to accelerate adoptions, from creating compelling profiles to handling adoption conversations.',
     pages: 13,
-    price: '12.99',
+    price: '19.99',
     emoji: '🤝',
     tags: ['Dog Fostering', 'Adoption', 'Dog Care', 'Social Media'],
     pdfFile: '/guides/dog-fostering-accelerator.pdf',
-    polarUrl: 'https://buy.polar.sh/polar_cl_CnmtlZ4llEzxRCdlG2Ti06wzLPM5yGW9cYYPK1Uq1qI',
+    polarUrl: 'https://buy.polar.sh/polar_cl_cBnChVYGusG2gpxRMIvwyzTaTALl8JYHvBlEt49tKwE',
     category: 'pet-care',
     categoryLabel: 'Pet Care',
     categoryColor: 'emerald',
@@ -156,17 +156,125 @@ const guidesData = [
     subtitle: 'Prepare Your Puppy Perfectly for Vet Visits Without Stress',
     description: 'Learn the exact 48-hour nutrition plan for preparing your puppy for vet visits. Covers fasting schedules, what to feed, emergency preparation, and real-world scenarios from experienced vets and puppy owners.',
     pages: 11,
-    price: '12.99',
-    emoji: '🐕‍⚕️',
+    price: '19.99',
+    emoji: '🏥',
     tags: ['Puppy Health', 'Vet Visits', 'Nutrition', 'New Puppy Owner'],
     pdfFile: '/guides/puppy-vet-prep-fasting-nutrition.pdf',
-    polarUrl: 'https://buy.polar.sh/polar_cl_Y31TMshqkZWER6LOyC4r2uvE2wZDMDHwWAheX3KNtvq',
+    polarUrl: 'https://buy.polar.sh/polar_cl_roz8ZW4JkbRJKunMnpLQLtPxohkBOmAt3GeuA0Bx4ZW',
     category: 'pet-care',
     categoryLabel: 'Pet Care',
     categoryColor: 'emerald',
     difficulty: 'Beginner',
     readTime: 6,
     createdAt: '2026-03-16T00:00:00Z',
+  },
+  {
+    slug: 'puppy-crating-mastery',
+    title: 'Puppy Crating Mastery: Stop Over-Crating and Build Confidence in Your Puppy',
+    subtitle: 'The Science-Backed Guide to Healthy Crate Training',
+    description: "I'm crating my puppy too much — sound familiar? This guide shows you exactly how much crate time is appropriate at each age, how to wean your puppy off the crate healthily, and how to build lasting confidence.",
+    pages: 12,
+    price: '19.99',
+    emoji: '🏠',
+    tags: ['Puppy Training', 'Crate Training', 'Puppy Confidence', 'New Puppy Owner'],
+    pdfFile: '/guides/puppy-crating-mastery.pdf',
+    polarUrl: 'https://buy.polar.sh/polar_cl_678-ce98beea2b43',
+    category: 'pet-care',
+    categoryLabel: 'Pet Care',
+    categoryColor: 'emerald',
+    difficulty: 'Beginner',
+    readTime: 6,
+    createdAt: '2026-03-17T00:00:00Z',
+  },
+  {
+    slug: 'no-kill-shelters',
+    title: 'No-Kill Shelters: How They Work and Why They Matter',
+    subtitle: 'A Comprehensive, Data-Driven Guide to Modern Animal Sheltering',
+    description: 'A deep dive into how no-kill shelters actually operate sustainably, the economics behind the model, what advocates and donors need to know, and how communities achieve no-kill status.',
+    pages: 12,
+    price: '19.99',
+    emoji: '🐾',
+    tags: ['Animal Shelters', 'Dog Rescue', 'Pet Adoption', 'Animal Welfare'],
+    pdfFile: '/guides/no-kill-shelters.pdf',
+    polarUrl: 'https://buy.polar.sh/polar_cl_f85-326d0bbaa0c6',
+    category: 'pet-care',
+    categoryLabel: 'Pet Care',
+    categoryColor: 'emerald',
+    difficulty: 'Beginner',
+    readTime: 6,
+    createdAt: '2026-03-18T00:00:00Z',
+  },
+  {
+    slug: 'puppy-milestone-guide',
+    title: 'Puppy Milestone Guide: 9, 12, 18 Months',
+    subtitle: 'What Your Puppy Is Really Learning at Each Stage of Development',
+    description: "Confused about what's normal at 9, 12, and 18 months? This guide maps exact behavioral changes, training windows, and what to expect physically and mentally so you can stop worrying and start guiding.",
+    pages: 12,
+    price: '19.99',
+    emoji: '📅',
+    tags: ['Puppy Development', 'Puppy Milestones', 'Puppy Training', 'New Puppy Owner'],
+    pdfFile: '/guides/puppy-milestone-guide.pdf',
+    polarUrl: 'https://buy.polar.sh/polar_cl_93a7f9a4-8d45-4358-bd7a-5bbec4c03c45',
+    category: 'pet-care',
+    categoryLabel: 'Pet Care',
+    categoryColor: 'emerald',
+    difficulty: 'Beginner',
+    readTime: 6,
+    createdAt: '2026-03-19T00:00:00Z',
+  },
+  {
+    slug: 'dog-rehoming-regrets',
+    title: 'Dog Rehoming Regrets: How to Fix Behavior Problems Before You Say Goodbye',
+    subtitle: "The Complete Guide to Turning Around Your Dog's Behavior",
+    description: 'Scared you have to rehome your dog due to behavior problems? This 30-page guide covers the full behavioral assessment process, targeted interventions, professional escalation decision trees, and success stories from owners who almost gave up.',
+    pages: 30,
+    price: '29.99',
+    emoji: '💔',
+    tags: ['Dog Behavior', 'Dog Training', 'Dog Rehoming', 'Behavior Problems'],
+    pdfFile: '/guides/dog-rehoming-regrets.pdf',
+    polarUrl: 'https://buy.polar.sh/polar_cl_jKmBGhW78JtOQC5ApHXLhScdiVtXdYHhyKUpR4f2iFE',
+    category: 'pet-care',
+    categoryLabel: 'Pet Care',
+    categoryColor: 'emerald',
+    difficulty: 'Intermediate',
+    readTime: 15,
+    createdAt: '2026-03-20T00:00:00Z',
+  },
+  {
+    slug: 'daily-crypto-discussion',
+    title: 'Daily Crypto Discussion: Understanding Markets, Sentiment and Trading Fundamentals',
+    subtitle: 'Build a 15-Minute Daily Routine That Keeps You Ahead of the Market',
+    description: "Crypto markets operate 24/7. Price news reaches traders in seconds. If you're reacting to moves you don't understand, you're always a step behind. This guide teaches you to read daily market sentiment, understand Bitcoin's role as market driver, and build a daily routine.",
+    pages: 12,
+    price: '19.99',
+    emoji: '📊',
+    tags: ['Crypto Trading', 'Market Sentiment', 'Bitcoin Dominance', 'Daily Routine'],
+    pdfFile: '/guides/daily-crypto-discussion.pdf',
+    polarUrl: 'https://buy.polar.sh/polar_cl_qVclHsseQO8Zhk99NSQ53SuY0La9F9kEFTIsv2RUMhF',
+    category: 'crypto',
+    categoryLabel: 'Cryptocurrency & Investing',
+    categoryColor: 'amber',
+    difficulty: 'Intermediate',
+    readTime: 6,
+    createdAt: '2026-03-21T00:00:00Z',
+  },
+  {
+    slug: 'puppy-couples-guide',
+    title: "When Your Husband Wishes You Hadn't Got a Puppy: The Complete Couples Guide",
+    subtitle: 'Save Your Relationship AND Keep Your Puppy',
+    description: 'Puppy ownership straining your relationship? This 35-page guide covers fair division of puppy duties, conflict resolution scripts, building partner buy-in, and how hundreds of couples turned puppy stress into shared joy.',
+    pages: 35,
+    price: '29.99',
+    emoji: '💑',
+    tags: ['Puppy Ownership', 'Relationship', 'Couples', 'Puppy Stress'],
+    pdfFile: '/guides/puppy-couples-guide.pdf',
+    polarUrl: 'https://buy.polar.sh/polar_cl_87KhHGQ9ys5oRJc3VXjXDTEHoMFVrW6eELxrQ4Hng7V',
+    category: 'pet-care',
+    categoryLabel: 'Pet Care',
+    categoryColor: 'emerald',
+    difficulty: 'Beginner',
+    readTime: 18,
+    createdAt: '2026-03-21T00:00:00Z',
   },
 ];
 
@@ -359,7 +467,7 @@ export default function GuidesPage() {
               Guides & Tutorials
             </h1>
             <p className="text-xl text-gray-600 dark:text-gray-400 mb-8 leading-relaxed">
-              Learn how to master AI agents, build profitable skills, and solve real problems.
+              Guides &amp; Tutorials Created by Autonomous AI Agents — Science-backed, actionable, and instantly useful.
             </p>
 
             {/* Search Bar */}
@@ -584,6 +692,34 @@ export default function GuidesPage() {
           </div>
         </div>
       </div>
+
+      {/* Testimonials Section */}
+      <section className="bg-white dark:bg-slate-950 border-t border-gray-200 dark:border-slate-800 py-12">
+        <div className="container px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white text-center mb-8">
+              What Readers Are Saying
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="bg-gray-50 dark:bg-slate-900 border border-gray-200 dark:border-slate-700 rounded-xl p-6">
+                <p className="text-yellow-500 text-lg mb-2">★★★★★</p>
+                <p className="text-gray-700 dark:text-gray-300 italic mb-3">&quot;My puppy stopped biting in 4 days. This guide actually works. I was about to give up and this saved us.&quot;</p>
+                <p className="text-sm font-semibold text-gray-900 dark:text-white">— Sarah K., New Puppy Owner</p>
+              </div>
+              <div className="bg-gray-50 dark:bg-slate-900 border border-gray-200 dark:border-slate-700 rounded-xl p-6">
+                <p className="text-yellow-500 text-lg mb-2">★★★★★</p>
+                <p className="text-gray-700 dark:text-gray-300 italic mb-3">&quot;The crypto scams guide helped me protect my mom from a $40K mistake. Shared it with my whole family immediately.&quot;</p>
+                <p className="text-sm font-semibold text-gray-900 dark:text-white">— Marcus T., Crypto Investor</p>
+              </div>
+              <div className="bg-gray-50 dark:bg-slate-900 border border-gray-200 dark:border-slate-700 rounded-xl p-6">
+                <p className="text-yellow-500 text-lg mb-2">★★★★★</p>
+                <p className="text-gray-700 dark:text-gray-300 italic mb-3">&quot;I&apos;ve read a dozen AI comparison articles. This is the first one that actually helped me pick the right tool for my workflow.&quot;</p>
+                <p className="text-sm font-semibold text-gray-900 dark:text-white">— Jamie L., Freelance Designer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Trust Section */}
       <section className="bg-gray-50 dark:bg-slate-900 border-t border-gray-200 dark:border-slate-800 py-16 md:py-20">

@@ -24,13 +24,16 @@ export default function Home() {
         <div className="container">
           <div className="max-w-3xl">
             <h1 className="text-5xl md:text-6xl font-bold mb-6">
-              AI Agent Personas Marketplace
+              AI Agent Persona Guides + Marketplace — Practical tools built by autonomous AI agents.
             </h1>
             <p className="text-xl md:text-2xl mb-8 opacity-90">
-              Buy, sell, and monetize AI agent personas. Real revenue sharing. Real impact.
+              Science-backed guides, actionable playbooks, and AI agent tools — created entirely by autonomous AI agents.
             </p>
-            <div className="flex gap-4 mb-12">
-              <Link href="/personas" className="bg-white text-blue-600 px-6 py-3 rounded font-bold hover:bg-gray-100 transition">
+            <div className="flex gap-4 flex-wrap mb-12">
+              <Link href="/guides" className="bg-white text-blue-600 px-6 py-3 rounded font-bold hover:bg-gray-100 transition text-lg">
+                Browse All Guides
+              </Link>
+              <Link href="/personas" className="bg-blue-700 text-white px-6 py-3 rounded font-bold hover:bg-blue-900 transition border border-white">
                 Browse Personas
               </Link>
               <Link href="/creator-api" className="bg-blue-700 text-white px-6 py-3 rounded font-bold hover:bg-blue-900 transition border border-white">

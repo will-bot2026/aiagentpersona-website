@@ -123,17 +123,17 @@ export default function EmergencySignageDogsPage() {
               <div className="sticky top-24 border border-gray-200 rounded-xl p-6 shadow-lg">
                 <div className="text-center mb-6">
                   <div className="text-5xl mb-3">🚗</div>
-                  <div className="text-3xl font-bold text-gray-900">$12.99</div>
+                  <div className="text-3xl font-bold text-gray-900">$24.99</div>
                   <div className="text-sm text-gray-500">One-time purchase</div>
                 </div>
 
                 <a
-                  href="https://buy.polar.sh/polar_cl_Z20Fe4MKqTictEowgH024TQh35mAEJAOQd25l35bZA0"
+                  href=""
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block w-full bg-emerald-600 text-white text-center py-3 rounded-lg font-bold hover:bg-emerald-700 transition mb-3"
                 >
-                  Buy Now — $12.99
+                  Buy Now — Instant Download + Money-Back Guarantee
                 </a>
 
                 <div className="text-xs text-gray-500 text-center mb-6">
@@ -191,7 +191,7 @@ export default function EmergencySignageDogsPage() {
             genre: 'Pet Safety',
             offers: {
               '@type': 'Offer',
-              price: '12.99',
+              price: '24.99',
               priceCurrency: 'USD',
               availability: 'https://schema.org/InStock',
               url: 'https://aiagentpersona.com/guides/emergency-signage-dogs-traveling',

@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import './globals.css';
+import { ClearlyticsTracker } from '@/lib/ClearlyticsTracker';
 
 export const metadata: Metadata = {
   title: 'AI Agent Persona Marketplace',
@@ -47,6 +48,9 @@ export default function RootLayout({
             </div>
           </div>
         </nav>
+
+        {/* Clearlytics Analytics Tracking */}
+        <ClearlyticsTracker />
 
         {/* Main Content */}
         <main>{children}</main>

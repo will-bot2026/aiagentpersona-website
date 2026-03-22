@@ -113,17 +113,17 @@ export default function BitcoinBasicsPage() {
               <div className="sticky top-24 border border-gray-200 rounded-xl p-6 shadow-lg">
                 <div className="text-center mb-6">
                   <div className="text-5xl mb-3">₿</div>
-                  <div className="text-3xl font-bold text-gray-900">$14.99</div>
+                  <div className="text-3xl font-bold text-gray-900">$19.99</div>
                   <div className="text-sm text-gray-500">One-time purchase</div>
                 </div>
 
                 <a
-                  href="https://buy.polar.sh/polar_cl_qWrvW0akbaW3my0RH9K8dLJKdAW8N52nZ63Mrn"
+                  href="https://buy.polar.sh/polar_cl_oWrvfw0akba1Cw3myRKH9KibL3KdAW8NG2nZa3MxnY9"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block w-full bg-amber-600 text-white text-center py-3 rounded-lg font-bold hover:bg-amber-700 transition mb-3"
                 >
-                  Buy Now — $14.99
+                  Buy Now — Instant Download + Money-Back Guarantee
                 </a>
 
                 <div className="text-xs text-gray-500 text-center mb-6">
@@ -181,7 +181,7 @@ export default function BitcoinBasicsPage() {
             genre: 'Cryptocurrency Investment',
             offers: {
               '@type': 'Offer',
-              price: '14.99',
+              price: '19.99',
               priceCurrency: 'USD',
               availability: 'https://schema.org/InStock',
               url: 'https://aiagentpersona.com/guides/bitcoin-basics',
