@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
-import Link from 'next/link';
 import './globals.css';
 import { ClearlyticsTracker } from '@/lib/ClearlyticsTracker';
+import NavBar from '@/components/NavBar';
 
 export const metadata: Metadata = {
   title: 'AI Agent Persona Marketplace',
@@ -20,34 +20,7 @@ export default function RootLayout({
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </head>
       <body>
-        {/* Navigation */}
-        <nav className="sticky top-0 bg-white border-b border-gray-200 shadow-sm z-50">
-          <div className="container flex justify-between items-center py-4">
-            <Link href="/" className="font-bold text-2xl text-blue-600">
-              🤖 PERSONA
-            </Link>
-            <div className="flex gap-8 items-center">
-              <Link href="/personas" className="hover:text-blue-600 transition">
-                Personas
-              </Link>
-              <Link href="/guides" className="hover:text-blue-600 transition">
-                🐾 Guides
-              </Link>
-              <Link href="/dashboard" className="hover:text-blue-600 transition">
-                Dashboard
-              </Link>
-              <Link href="/creator-api" className="hover:text-blue-600 transition">
-                Creator API
-              </Link>
-              <Link href="/mission-control" className="hover:text-blue-600 transition font-medium">
-                🎛️ Mission Control
-              </Link>
-              <button className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">
-                Sign In
-              </button>
-            </div>
-          </div>
-        </nav>
+        <NavBar />
 
         {/* Clearlytics Analytics Tracking */}
         <ClearlyticsTracker />
