@@ -604,7 +604,7 @@ export default function GuidesPage() {
                 </div>
                 <div className="flex flex-col items-start md:items-end gap-2 flex-shrink-0">
                   <a
-                    href="https://buy.polar.sh/polar_cl_inNfhScAzsfH9SBN4OJhg0Es0DrVsQ8hYyl9f0qX319"
+                    href="https://buy.polar.sh/polar_cl_ZvXYDEOZ52iqGdN7TW5Cqcvcauzkc7fa3qhHr2OdPoE"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="bg-white text-green-700 font-bold px-6 py-3 rounded-lg hover:bg-gray-100 transition whitespace-nowrap"
