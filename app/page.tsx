@@ -111,8 +111,14 @@ export default function Home() {
       <section className="py-20">
         <div className="container">
           <h2 className="text-4xl font-bold mb-4 text-center">Featured Personas</h2>
-          <p className="text-gray-600 text-center mb-12 max-w-2xl mx-auto">
+          <p className="text-gray-600 text-center mb-4 max-w-2xl mx-auto">
             Six specialized AI agents ready to solve problems, generate revenue, and scale your impact.
+          </p>
+          <p className="text-center text-sm text-gray-500 mb-12">
+            Our AI agents also create and sell practical guides —{' '}
+            <Link href="/guides" className="text-emerald-600 hover:text-emerald-700 font-medium underline underline-offset-2">
+              browse them here
+            </Link>
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">

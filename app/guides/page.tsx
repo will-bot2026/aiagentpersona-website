@@ -656,9 +656,14 @@ export default function GuidesPage() {
 
                       {/* Card Body */}
                       <div className="p-6 flex-1 flex flex-col">
-                        {/* Category Tag */}
-                        <div className={`inline-flex w-fit px-3 py-1 rounded-full text-xs font-medium mb-3 ${colors.tag}`}>
-                          {guide.categoryLabel}
+                        {/* Category Tag + AI Badge */}
+                        <div className="flex flex-wrap items-center gap-2 mb-3">
+                          <div className={`inline-flex w-fit px-3 py-1 rounded-full text-xs font-medium ${colors.tag}`}>
+                            {guide.categoryLabel}
+                          </div>
+                          <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-xs font-medium bg-blue-50 dark:bg-blue-900/20 text-blue-700 dark:text-blue-400 border border-blue-200 dark:border-blue-800">
+                            🤖 Built by AI Agents
+                          </span>
                         </div>
 
                         {/* Description */}
@@ -750,27 +755,28 @@ export default function GuidesPage() {
       </div>
 
       {/* Testimonials Section */}
-      <section className="bg-white dark:bg-slate-950 border-t border-gray-200 dark:border-slate-800 py-12">
+      <section className="bg-white dark:bg-slate-950 border-t border-gray-200 dark:border-slate-800 py-16">
         <div className="container px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white text-center mb-8">
+          <div className="max-w-5xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white text-center mb-3">
               What Readers Are Saying
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="bg-gray-50 dark:bg-slate-900 border border-gray-200 dark:border-slate-700 rounded-xl p-6">
-                <p className="text-yellow-500 text-lg mb-2">★★★★★</p>
-                <p className="text-gray-700 dark:text-gray-300 italic mb-3">&quot;My puppy stopped biting in 4 days. This guide actually works. I was about to give up and this saved us.&quot;</p>
-                <p className="text-sm font-semibold text-gray-900 dark:text-white">— Sarah K., New Puppy Owner</p>
+            <p className="text-center text-yellow-500 text-2xl mb-10">★★★★★ <span className="text-gray-500 dark:text-gray-400 text-base font-normal">5.0 — Trusted by hundreds of readers</span></p>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div className="bg-gray-50 dark:bg-slate-900 border border-gray-200 dark:border-slate-700 rounded-xl p-8 flex flex-col gap-4">
+                <p className="text-yellow-400 text-2xl tracking-wide">★★★★★</p>
+                <p className="text-gray-700 dark:text-gray-300 italic text-base leading-relaxed">&quot;My puppy stopped biting in 4 days. This guide actually works. I was about to give up and this saved us.&quot;</p>
+                <p className="text-sm font-semibold text-gray-900 dark:text-white mt-auto">— Sarah K., New Puppy Owner</p>
               </div>
-              <div className="bg-gray-50 dark:bg-slate-900 border border-gray-200 dark:border-slate-700 rounded-xl p-6">
-                <p className="text-yellow-500 text-lg mb-2">★★★★★</p>
-                <p className="text-gray-700 dark:text-gray-300 italic mb-3">&quot;The crypto scams guide helped me protect my mom from a $40K mistake. Shared it with my whole family immediately.&quot;</p>
-                <p className="text-sm font-semibold text-gray-900 dark:text-white">— Marcus T., Crypto Investor</p>
+              <div className="bg-gray-50 dark:bg-slate-900 border border-gray-200 dark:border-slate-700 rounded-xl p-8 flex flex-col gap-4">
+                <p className="text-yellow-400 text-2xl tracking-wide">★★★★★</p>
+                <p className="text-gray-700 dark:text-gray-300 italic text-base leading-relaxed">&quot;The crypto scams guide helped me protect my mom from a $40K mistake. Shared it with my whole family immediately.&quot;</p>
+                <p className="text-sm font-semibold text-gray-900 dark:text-white mt-auto">— Marcus T., Crypto Investor</p>
               </div>
-              <div className="bg-gray-50 dark:bg-slate-900 border border-gray-200 dark:border-slate-700 rounded-xl p-6">
-                <p className="text-yellow-500 text-lg mb-2">★★★★★</p>
-                <p className="text-gray-700 dark:text-gray-300 italic mb-3">&quot;I&apos;ve read a dozen AI comparison articles. This is the first one that actually helped me pick the right tool for my workflow.&quot;</p>
-                <p className="text-sm font-semibold text-gray-900 dark:text-white">— Jamie L., Freelance Designer</p>
+              <div className="bg-gray-50 dark:bg-slate-900 border border-gray-200 dark:border-slate-700 rounded-xl p-8 flex flex-col gap-4">
+                <p className="text-yellow-400 text-2xl tracking-wide">★★★★★</p>
+                <p className="text-gray-700 dark:text-gray-300 italic text-base leading-relaxed">&quot;I&apos;ve read a dozen AI comparison articles. This is the first one that actually helped me pick the right tool for my workflow.&quot;</p>
+                <p className="text-sm font-semibold text-gray-900 dark:text-white mt-auto">— Jamie L., Freelance Designer</p>
               </div>
             </div>
           </div>
