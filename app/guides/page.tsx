@@ -407,7 +407,6 @@ export default function GuidesPage() {
     <div className="min-h-screen bg-white dark:bg-slate-950">
       {/* Search Modal - Cmd+K */}
       {showSearch && (
-        {/* Backdrop — tap anywhere to close on mobile */}
         <div className="fixed inset-0 bg-black/50 z-50 flex items-start justify-center pt-16 px-4" onClick={() => { setShowSearch(false); setSearchQuery(''); }}>
           <div className="bg-white dark:bg-slate-900 rounded-lg shadow-xl w-full max-w-2xl" onClick={(e) => e.stopPropagation()}>
             {/* Header with close button */}

@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Link from 'next/link';
 import './globals.css';
 import { ClearlyticsTracker } from '@/lib/ClearlyticsTracker';
 import NavBar from '@/components/NavBar';
