@@ -11,7 +11,7 @@ const guidesData = [
     subtitle: 'Stop Nipping, Mouthing, and Aggressive Biting in 14 Days or Less',
     description: 'A step-by-step guide based on proven positive-reinforcement techniques used by professional dog trainers worldwide. Covers the reverse timeout technique, bite inhibition training, managing the witching hour, special cases for herding breeds, and a complete 14-day action plan.',
     pages: 17,
-    price: '19.99',
+    price: '29.99',
     emoji: '🐕',
     tags: ['Puppy Training', 'Bite Inhibition', 'Positive Reinforcement', 'New Puppy Owner'],
     pdfFile: '/guides/the-complete-puppy-biting-solution.pdf',
@@ -578,6 +578,61 @@ export default function GuidesPage() {
               {sortedGuides.length} guide{sortedGuides.length !== 1 ? 's' : ''} found
             </p>
 
+            {/* Puppy Survival Bundle Banner */}
+            <div className="mb-6 rounded-xl bg-gradient-to-r from-green-600 to-emerald-700 p-6 text-white">
+              <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+                <div>
+                  <h2 className="text-xl font-bold mb-1">🐾 Puppy Survival Bundle — 3 Essential Guides</h2>
+                  <p className="text-sm opacity-90 mb-2">Puppy Biting + Puppy Health + Puppy Crating Mastery</p>
+                  <p className="text-sm opacity-80">Everything you need for the first 6 months. Stop biting, know when sick, crate train right.</p>
+                </div>
+                <div className="flex flex-col items-start md:items-end gap-2 flex-shrink-0">
+                  <a
+                    href="https://buy.polar.sh/polar_cl_inNfhScAzsfH9SBN4OJhg0Es0DrVsQ8hYyl9f0qX319"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-white text-green-700 font-bold px-6 py-3 rounded-lg hover:bg-gray-100 transition whitespace-nowrap"
+                  >
+                    Get the Bundle — $49
+                  </a>
+                  <p className="text-xs opacity-75">30-Day Money-Back Guarantee • Instant Download</p>
+                  <p className="text-xs opacity-60 line-through">$59.97 separately</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Featured Guides Section */}
+            <div className="mb-8">
+              <h2 className="text-lg font-bold text-gray-900 dark:text-white mb-4">✨ Featured Guides</h2>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                {(['puppy-biting', 'puppy-health', 'ai-agent-choice', 'crypto-scams'] as const).map((slug) => {
+                  const guide = guidesData.find((g) => g.slug === slug);
+                  if (!guide) return null;
+                  return (
+                    <div key={slug} className="border-2 border-yellow-400 dark:border-yellow-500 rounded-xl p-4 bg-yellow-50 dark:bg-yellow-900/10 flex flex-col gap-3">
+                      <div className="flex items-start justify-between gap-2">
+                        <div className="flex items-center gap-2">
+                          <span className="text-3xl">{guide.emoji}</span>
+                          <div>
+                            <span className="text-xs font-bold text-yellow-700 dark:text-yellow-400 bg-yellow-200 dark:bg-yellow-800/50 px-2 py-0.5 rounded-full">🏆 Featured</span>
+                            <h3 className="text-sm font-bold text-gray-900 dark:text-white mt-1 leading-tight">{guide.title}</h3>
+                          </div>
+                        </div>
+                      </div>
+                      <a
+                        href={guide.polarUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="bg-yellow-500 hover:bg-yellow-600 text-white text-center py-2 rounded-lg font-semibold text-sm transition"
+                      >
+                        Buy Now — ${guide.price}
+                      </a>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+
             {/* Guides Grid */}
             {sortedGuides.length > 0 ? (
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -664,6 +719,7 @@ export default function GuidesPage() {
                             Learn More
                           </Link>
                         </div>
+                        <p className="text-xs text-gray-400 dark:text-gray-500 text-center mt-2">✅ 30-Day Money-Back</p>
                       </div>
                     </article>
                   );

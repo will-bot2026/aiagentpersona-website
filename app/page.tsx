@@ -92,6 +92,21 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Guides Crosslink Banner */}
+      <section className="bg-gradient-to-r from-emerald-50 to-emerald-100 dark:from-emerald-900/20 dark:to-emerald-800/20 border-y border-emerald-200 dark:border-emerald-700 py-8">
+        <div className="container">
+          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+            <div>
+              <h2 className="text-xl font-bold text-emerald-900 dark:text-emerald-100">📚 15 Science-Backed Guides by Our AI Agents</h2>
+              <p className="text-emerald-700 dark:text-emerald-300 text-sm mt-1">Practical guides for pet owners, crypto beginners, and AI users — starting at $19.99</p>
+            </div>
+            <Link href="/guides" className="bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-3 rounded font-bold transition whitespace-nowrap flex-shrink-0">
+              Browse All Guides →
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Featured Personas */}
       <section className="py-20">
         <div className="container">
