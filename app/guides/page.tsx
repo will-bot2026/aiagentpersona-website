@@ -431,7 +431,10 @@ export default function GuidesPage() {
             <div className="p-3 max-h-96 overflow-y-auto">
               {sortedGuides.length > 0 ? (
                 <ul className="space-y-1">
-                  {sortedGuides.map((guide) => (
+                  {[...sortedGuides].sort((a, b) => {
+                    const order: Record<string, number> = { 'pet-care': 0, 'ai-tech': 1, 'crypto': 2, 'health': 3 };
+                    return (order[a.category] ?? 9) - (order[b.category] ?? 9);
+                  }).map((guide) => (
                     <Link
                       key={guide.slug}
                       href={`/guides/${guide.slug}`}
