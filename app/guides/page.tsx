@@ -407,28 +407,42 @@ export default function GuidesPage() {
     <div className="min-h-screen bg-white dark:bg-slate-950">
       {/* Search Modal - Cmd+K */}
       {showSearch && (
-        <div className="fixed inset-0 bg-black/50 z-50 flex items-start justify-center pt-20">
-          <div className="bg-white dark:bg-slate-900 rounded-lg shadow-xl w-full max-w-2xl mx-4">
-            <input
-              autoFocus
-              type="text"
-              placeholder="Search guides by title, topic, or keyword..."
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full px-6 py-4 text-lg border-b border-gray-200 dark:border-slate-700 bg-white dark:bg-slate-900 dark:text-white outline-none"
-            />
-            <div className="p-4">
+        {/* Backdrop — tap anywhere to close on mobile */}
+        <div className="fixed inset-0 bg-black/50 z-50 flex items-start justify-center pt-16 px-4" onClick={() => { setShowSearch(false); setSearchQuery(''); }}>
+          <div className="bg-white dark:bg-slate-900 rounded-lg shadow-xl w-full max-w-2xl" onClick={(e) => e.stopPropagation()}>
+            {/* Header with close button */}
+            <div className="flex items-center border-b border-gray-200 dark:border-slate-700">
+              <input
+                autoFocus
+                type="text"
+                placeholder="Search guides..."
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                className="flex-1 px-5 py-4 text-base bg-transparent dark:text-white outline-none"
+              />
+              <button
+                onClick={() => { setShowSearch(false); setSearchQuery(''); }}
+                className="px-4 py-4 text-gray-500 hover:text-gray-900 dark:hover:text-white text-xl font-medium"
+                aria-label="Close search"
+              >
+                ✕
+              </button>
+            </div>
+            <div className="p-3 max-h-96 overflow-y-auto">
               {sortedGuides.length > 0 ? (
-                <ul className="space-y-2">
-                  {sortedGuides.slice(0, 8).map((guide) => (
+                <ul className="space-y-1">
+                  {sortedGuides.map((guide) => (
                     <Link
                       key={guide.slug}
                       href={`/guides/${guide.slug}`}
-                      onClick={() => setShowSearch(false)}
-                      className="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-slate-800 cursor-pointer"
+                      onClick={() => { setShowSearch(false); setSearchQuery(''); }}
+                      className="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-slate-800 cursor-pointer"
                     >
-                      <div className="font-semibold text-gray-900 dark:text-white">{guide.title}</div>
-                      <div className="text-sm text-gray-500 dark:text-gray-400">{guide.categoryLabel}</div>
+                      <span className="text-2xl">{guide.emoji}</span>
+                      <div>
+                        <div className="font-semibold text-gray-900 dark:text-white text-sm">{guide.title}</div>
+                        <div className="text-xs text-gray-500 dark:text-gray-400">{guide.categoryLabel} · ${guide.price}</div>
+                      </div>
                     </Link>
                   ))}
                 </ul>
@@ -437,8 +451,8 @@ export default function GuidesPage() {
               )}
             </div>
             <div className="px-4 py-3 border-t border-gray-200 dark:border-slate-700 text-xs text-gray-500 dark:text-gray-400 flex justify-between">
-              <span>Press ESC to close</span>
-              <span>↵ to select</span>
+              <span>{sortedGuides.length} guide{sortedGuides.length !== 1 ? 's' : ''} found</span>
+              <span>Tap ✕ or outside to close</span>
             </div>
           </div>
         </div>
