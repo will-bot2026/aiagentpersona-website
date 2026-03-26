@@ -3,10 +3,10 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'No-Kill Shelters: How They Work and Why They Matter | AI Agent Persona Guides',
-  description: 'Download the complete guide: No-Kill Shelters: How They Work and Why They Matter. Instant PDF download, 12 pages of actionable content.',
+  description: 'A data-driven deep dive into how no-kill shelters actually operate sustainably — the economics, intake strategies, foster networks, and how communities achieve no-kill status. 14 pages.',
   openGraph: {
     title: 'No-Kill Shelters: How They Work and Why They Matter',
-    description: 'Complete guide with actionable strategies and expert insights.',
+    description: 'Understand the real business model, intake strategies, and community systems that make no-kill shelters sustainable.',
     url: 'https://aiagentpersona.com/guides/no-kill-shelters',
     siteName: 'AI Agent Persona',
     type: 'website',
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'No-Kill Shelters: How They Work and Why They Matter',
-    description: 'Complete guide — instant PDF download.',
+    description: 'The data-driven guide to understanding no-kill shelter operations, funding, and community impact.',
   },
 };
 
@@ -38,38 +38,64 @@ export default function GuidePage() {
             {/* Main Content */}
             <div className="md:col-span-2">
               <h1 className="text-3xl md:text-4xl font-bold mb-4">
-                🐕 No-Kill Shelters: How They Work and Why They Matter
+                🐾 No-Kill Shelters: How They Work and Why They Matter
               </h1>
               <p className="text-lg text-gray-600 mb-8 italic">
-                A Comprehensive, Data-Driven Guide — 12 pages of actionable insights.
+                A Comprehensive, Data-Driven Guide to Modern Animal Sheltering
               </p>
 
               <div className="prose max-w-none">
                 <h2 className="text-2xl font-bold mb-4">What&apos;s Inside</h2>
                 <p className="text-gray-700 mb-6">
-                  Based on analysis of thousands of real community discussions, this guide delivers the information
-                  you need — no fluff, no filler. Just proven strategies and actionable steps.
+                  Every year, approximately 920,000 shelter animals are euthanized in the US. Yet many shelters claim to be &quot;no-kill.&quot; How does that work? This guide explains the real economics, intake strategies, foster networks, and community systems that make no-kill shelters operate sustainably — and what advocates and donors actually need to know.
                 </p>
+
+                <div className="bg-emerald-50 border-l-4 border-emerald-500 p-4 mb-6">
+                  <p className="text-emerald-800 font-medium">
+                    &quot;No-kill shelters achieve their status through strategic intake limits, active foster networks, and aggressive marketing — not by eliminating all euthanasia. Understanding this distinction changes everything about how you support them.&quot;
+                  </p>
+                </div>
 
                 <h3 className="text-xl font-bold mb-3">📖 Table of Contents</h3>
                 <ol className="list-decimal list-inside space-y-2 text-gray-700 mb-8">
-                  <li>1. Chapter 1: The Shelter Crisis - Understanding the Numbers</li>
-                  <li>2. Chapter 2: The Business Model of No-Kill Shelters</li>
-                  <li>3. Chapter 3: The Intake Selection Strategy</li>
-                  <li>4. Chapter 4: Marketing and Adoption Acceleration</li>
-                  <li>5. Chapter 5: The Foster Network - Doubling Capacity</li>
-                  <li>6. Chapter 6: Transfer Networks and Regional Cooperation</li>
-                  <li>7. Chapter 7: Behavioral Rehabilitation and Specialized Rescues</li>
-                  <li>8. Chapter 8: Medical Care and Triage</li>
-                  <li>9. Chapter 9: Community Fundraising and Sustainability</li>
-                  <li>10. Chapter 10: The Future - Sustainability for All</li>
+                  <li>The Shelter Crisis — Understanding the Numbers</li>
+                  <li>The Business Model of No-Kill Shelters</li>
+                  <li>The Intake Selection Strategy</li>
+                  <li>Marketing and Adoption Acceleration</li>
+                  <li>The Foster Network — Doubling Capacity</li>
+                  <li>Transfer Networks and Regional Cooperation</li>
+                  <li>Behavioral Rehabilitation and Specialized Rescues</li>
+                  <li>Medical Care and Triage</li>
+                  <li>Community Fundraising and Sustainability</li>
+                  <li>The Future — Sustainability for All</li>
                 </ol>
+
+                <h3 className="text-xl font-bold mb-3">✅ What This Guide Covers</h3>
+                <ul className="space-y-3 mb-8">
+                  <li className="flex gap-2">
+                    <span className="text-emerald-500">✓</span>
+                    <span><strong>The 90% Live-Release Rate</strong> — What &quot;no-kill&quot; actually means and why the math is more complex than it sounds.</span>
+                  </li>
+                  <li className="flex gap-2">
+                    <span className="text-emerald-500">✓</span>
+                    <span><strong>Intake Selection Strategy</strong> — How no-kill shelters choose which animals to accept and why this creates a two-tiered system.</span>
+                  </li>
+                  <li className="flex gap-2">
+                    <span className="text-emerald-500">✓</span>
+                    <span><strong>Foster Network Economics</strong> — How volunteer foster programs double a shelter&apos;s effective capacity at minimal cost.</span>
+                  </li>
+                  <li className="flex gap-2">
+                    <span className="text-emerald-500">✓</span>
+                    <span><strong>Community Fundraising Models</strong> — What sustainable no-kill shelters do differently to stay financially viable long-term.</span>
+                  </li>
+                </ul>
 
                 <h3 className="text-xl font-bold mb-3">🐾 Who Is This For?</h3>
                 <ul className="space-y-2 text-gray-700 mb-8">
-                  <li>• Anyone dealing with this exact problem and needing a clear solution</li>
-                  <li>• People who have tried the generic advice and need something that actually works</li>
-                  <li>• Anyone who wants expert-level guidance without the consultant price tag</li>
+                  <li>• Rescue volunteers and shelter workers who want to understand the full ecosystem</li>
+                  <li>• Donors deciding which shelters deserve their support</li>
+                  <li>• Animal welfare advocates working toward community no-kill status</li>
+                  <li>• Anyone curious about how these organizations actually sustain themselves</li>
                 </ul>
               </div>
             </div>
@@ -78,7 +104,7 @@ export default function GuidePage() {
             <div className="md:col-span-1">
               <div className="sticky top-24 border border-gray-200 rounded-xl p-6 shadow-lg">
                 <div className="text-center mb-6">
-                  <div className="text-5xl mb-3">🐕</div>
+                  <div className="text-5xl mb-3">🐾</div>
                   <div className="text-3xl font-bold text-gray-900">$19.99</div>
                   <div className="text-sm text-gray-500">One-time purchase</div>
                 </div>
@@ -93,17 +119,21 @@ export default function GuidePage() {
                 </a>
 
                 <div className="text-xs text-gray-500 text-center mb-6">
-                  Instant PDF download • 12 pages • Money-back guarantee
+                  Instant PDF download • 14 pages • Money-back guarantee
                 </div>
 
                 <div className="border-t pt-4 space-y-3 text-sm text-gray-600">
                   <div className="flex gap-2">
                     <span>📄</span>
-                    <span>12 professionally formatted pages</span>
+                    <span>14 professionally formatted pages</span>
                   </div>
                   <div className="flex gap-2">
-                    <span>📋</span>
-                    <span>Actionable strategies and step-by-step guides</span>
+                    <span>📊</span>
+                    <span>Data-driven analysis of shelter economics</span>
+                  </div>
+                  <div className="flex gap-2">
+                    <span>🐾</span>
+                    <span>Foster network and intake strategy breakdowns</span>
                   </div>
                   <div className="flex gap-2">
                     <span>♻️</span>
@@ -131,8 +161,8 @@ export default function GuidePage() {
             '@context': 'https://schema.org',
             '@type': 'Book',
             name: 'No-Kill Shelters: How They Work and Why They Matter',
-            description: 'Complete guide with actionable strategies based on real community research.',
-            numberOfPages: 12,
+            description: 'A data-driven guide to understanding how no-kill shelters operate sustainably — the economics, intake strategies, foster networks, and community systems.',
+            numberOfPages: 14,
             bookFormat: 'https://schema.org/EBook',
             url: 'https://aiagentpersona.com/guides/no-kill-shelters',
             inLanguage: 'en',

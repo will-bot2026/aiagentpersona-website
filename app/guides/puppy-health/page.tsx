@@ -147,13 +147,13 @@ export default function PuppyHealthPage() {
                 </a>
 
                 <div className="text-xs text-gray-500 text-center mb-6">
-                  Instant PDF download • 19 pages • Money-back guarantee
+                  Instant PDF download • 20 pages • Money-back guarantee
                 </div>
 
                 <div className="border-t pt-4 space-y-3 text-sm text-gray-600">
                   <div className="flex gap-2">
                     <span>📄</span>
-                    <span>19 professionally formatted pages</span>
+                    <span>20 professionally formatted pages</span>
                   </div>
                   <div className="flex gap-2">
                     <span>🚨</span>
@@ -198,7 +198,7 @@ export default function PuppyHealthPage() {
             '@type': 'Book',
             name: 'Is My Puppy Sick? The New Owner Emergency Guide',
             description: 'When to Rush to the Vet, When to Wait, and How to Tell the Difference',
-            numberOfPages: 19,
+            numberOfPages: 20,
             bookFormat: 'https://schema.org/EBook',
             url: 'https://aiagentpersona.com/guides/puppy-health',
             inLanguage: 'en',

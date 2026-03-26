@@ -137,13 +137,13 @@ export default function PuppyMilestoneGuidePage() {
                 </a>
 
                 <div className="text-xs text-gray-500 text-center mb-6">
-                  Instant PDF download • 12 pages • Money-back guarantee
+                  Instant PDF download • 22 pages • Money-back guarantee
                 </div>
 
                 <div className="border-t pt-4 space-y-3 text-sm text-gray-600">
                   <div className="flex gap-2">
                     <span>📄</span>
-                    <span>12 professionally formatted pages</span>
+                    <span>22 professionally formatted pages</span>
                   </div>
                   <div className="flex gap-2">
                     <span>📅</span>
@@ -184,7 +184,7 @@ export default function PuppyMilestoneGuidePage() {
             '@type': 'Book',
             name: 'Puppy Milestone Guide: What Your Puppy Is Really Learning at 9, 12, and 18 Months',
             description: 'Understand your puppy\'s brain development from 9 to 18 months and navigate adolescence without frustration.',
-            numberOfPages: 12,
+            numberOfPages: 22,
             bookFormat: 'https://schema.org/EBook',
             url: 'https://aiagentpersona.com/guides/puppy-milestone-guide',
             inLanguage: 'en',

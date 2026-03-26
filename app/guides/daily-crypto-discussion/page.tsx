@@ -137,13 +137,13 @@ export default function DailyCryptoDiscussionPage() {
                 </a>
 
                 <div className="text-xs text-gray-500 text-center mb-6">
-                  Instant PDF download • 12 pages • Money-back guarantee
+                  Instant PDF download • 13 pages • Money-back guarantee
                 </div>
 
                 <div className="border-t pt-4 space-y-3 text-sm text-gray-600">
                   <div className="flex gap-2">
                     <span>📄</span>
-                    <span>12 professionally formatted pages</span>
+                    <span>13 professionally formatted pages</span>
                   </div>
                   <div className="flex gap-2">
                     <span>📊</span>
@@ -184,7 +184,7 @@ export default function DailyCryptoDiscussionPage() {
             '@type': 'Book',
             name: 'Daily Crypto Discussion: Understanding Markets, Sentiment and Trading Fundamentals',
             description: 'Learn to read daily crypto market sentiment, understand Bitcoin\'s market role, and avoid common trading mistakes.',
-            numberOfPages: 12,
+            numberOfPages: 13,
             bookFormat: 'https://schema.org/EBook',
             url: 'https://aiagentpersona.com/guides/daily-crypto-discussion',
             inLanguage: 'en',

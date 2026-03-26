@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: "When Your Husband Wishes You Hadn't Got a Puppy: The Complete Couples Guide | AI Agent Persona Guides",
-  description: 'Save your relationship AND keep your puppy. A 35-page guide to fair division of puppy duties, conflict resolution, building partner buy-in, and turning puppy stress into shared joy.',
+  description: 'Save your relationship AND keep your puppy. A guide to fair division of puppy duties, conflict resolution, building partner buy-in, and turning puppy stress into shared joy.',
   keywords: ['puppy couples guide', 'husband hates puppy', 'puppy stress relationship', 'puppy ownership couples', 'puppy conflict resolution'],
   openGraph: {
     title: "When Your Husband Wishes You Hadn't Got a Puppy: The Complete Couples Guide",
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: "When Your Husband Wishes You Hadn't Got a Puppy",
-    description: 'Save your relationship AND keep your puppy with this 35-page couples guide.',
+    description: 'Save your relationship AND keep your puppy with this couples guide.',
   },
 };
 
@@ -42,7 +42,7 @@ export default function PuppyCouplesGuidePage() {
                 💑 When Your Husband Wishes You Hadn&apos;t Got a Puppy: The Complete Couples Guide
               </h1>
               <p className="text-lg text-gray-600 mb-8 italic">
-                Save Your Relationship AND Keep Your Puppy — 35 Pages of Real Solutions
+                Save Your Relationship AND Keep Your Puppy — Real Solutions for Couples
               </p>
 
               <div className="prose max-w-none">
@@ -143,13 +143,13 @@ export default function PuppyCouplesGuidePage() {
                 </a>
 
                 <div className="text-xs text-gray-500 text-center mb-6">
-                  Instant PDF download • 35 pages • Money-back guarantee
+                  Instant PDF download • 11 pages • Money-back guarantee
                 </div>
 
                 <div className="border-t pt-4 space-y-3 text-sm text-gray-600">
                   <div className="flex gap-2">
                     <span>📄</span>
-                    <span>35 professionally formatted pages</span>
+                    <span>11 professionally formatted pages</span>
                   </div>
                   <div className="flex gap-2">
                     <span>🗺️</span>
@@ -197,8 +197,8 @@ export default function PuppyCouplesGuidePage() {
             '@context': 'https://schema.org',
             '@type': 'Book',
             name: "When Your Husband Wishes You Hadn't Got a Puppy: The Complete Couples Guide",
-            description: 'Save your relationship AND keep your puppy. 35 pages of real solutions for couples navigating puppy ownership.',
-            numberOfPages: 35,
+            description: 'Save your relationship AND keep your puppy. Real solutions for couples navigating puppy ownership.',
+            numberOfPages: 11,
             bookFormat: 'https://schema.org/EBook',
             url: 'https://aiagentpersona.com/guides/puppy-couples-guide',
             author: {

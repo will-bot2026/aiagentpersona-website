@@ -137,13 +137,13 @@ export default function PuppyCratingMasteryPage() {
                 </a>
 
                 <div className="text-xs text-gray-500 text-center mb-6">
-                  Instant PDF download • 12 pages • Money-back guarantee
+                  Instant PDF download • 18 pages • Money-back guarantee
                 </div>
 
                 <div className="border-t pt-4 space-y-3 text-sm text-gray-600">
                   <div className="flex gap-2">
                     <span>📄</span>
-                    <span>12 professionally formatted pages</span>
+                    <span>18 professionally formatted pages</span>
                   </div>
                   <div className="flex gap-2">
                     <span>📅</span>
@@ -184,7 +184,7 @@ export default function PuppyCratingMasteryPage() {
             '@type': 'Book',
             name: 'Puppy Crating Mastery: Stop Over-Crating and Build Confidence in Your Puppy',
             description: 'Age-appropriate crate schedules and techniques to raise a confident, well-adjusted puppy without over-crating.',
-            numberOfPages: 12,
+            numberOfPages: 18,
             bookFormat: 'https://schema.org/EBook',
             url: 'https://aiagentpersona.com/guides/puppy-crating-mastery',
             inLanguage: 'en',

@@ -127,13 +127,13 @@ export default function PuppyBitingPage() {
                 </a>
 
                 <div className="text-xs text-gray-500 text-center mb-6">
-                  Instant PDF download • 17 pages • Money-back guarantee
+                  Instant PDF download • 18 pages • Money-back guarantee
                 </div>
 
                 <div className="border-t pt-4 space-y-3 text-sm text-gray-600">
                   <div className="flex gap-2">
                     <span>📄</span>
-                    <span>17 professionally formatted pages</span>
+                    <span>18 professionally formatted pages</span>
                   </div>
                   <div className="flex gap-2">
                     <span>📋</span>
@@ -174,7 +174,7 @@ export default function PuppyBitingPage() {
             '@type': 'Book',
             name: 'The Complete Puppy Biting Solution',
             description: 'A Step-by-Step Guide to Stop Nipping, Mouthing, and Aggressive Biting in 14 Days or Less',
-            numberOfPages: 17,
+            numberOfPages: 18,
             bookFormat: 'https://schema.org/EBook',
             url: 'https://aiagentpersona.com/guides/puppy-biting',
             inLanguage: 'en',
