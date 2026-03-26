@@ -294,6 +294,24 @@ const guidesData = [
     readTime: 21,
     createdAt: '2026-03-26T00:00:00Z',
   },
+  {
+    slug: 'job-loss-survival-plan',
+    title: 'Job Loss Survival Plan: What to Do the First 30 Days After Losing Your Job',
+    subtitle: 'Stop Panicking. Start Recovering. Step-by-Step.',
+    description: 'Lost your job? This 28-page guide covers everything: how to handle the first 24 hours, filing for unemployment, financial triage to stretch your runway, how to explain what happened to future employers, job search strategy that actually works, bridge income options, and the mental health reality nobody talks about. Real advice, not generic platitudes. 7,700+ words.',
+    pages: 28,
+    price: '24.99',
+    emoji: '💼',
+    tags: ['Job Loss', 'Career', 'Unemployment', 'Personal Finance', 'Job Search', 'Mental Health'],
+    pdfFile: '/guides/job-loss-survival-plan.pdf',
+    polarUrl: 'https://buy.polar.sh/polar_cl_5Ur6jD4lMjTuDllFtpk3l4rIU4DIIjmjDk7Sq2frw3G',
+    category: 'finance',
+    categoryLabel: 'Personal Finance',
+    categoryColor: 'blue',
+    difficulty: 'Beginner',
+    readTime: 39,
+    createdAt: '2026-03-26T00:00:00Z',
+  },
 ];
 
 // Category definitions
