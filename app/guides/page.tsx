@@ -289,7 +289,7 @@ const guidesData = [
     polarUrl: 'https://buy.polar.sh/polar_cl_nADcMvoGUquJsJGONPCw2I4ojzyheEwvegKJ81Ue7yK',
     category: 'finance',
     categoryLabel: 'Personal Finance',
-    categoryColor: 'violet',
+    categoryColor: 'blue',
     difficulty: 'Beginner',
     readTime: 21,
     createdAt: '2026-03-26T00:00:00Z',
@@ -303,7 +303,7 @@ const categories = [
   { id: 'crypto', label: 'Cryptocurrency & Investing', color: 'amber' },
   { id: 'ai-tech', label: 'AI & Technology', color: 'blue' },
   { id: 'health', label: 'Health & Fitness', color: 'rose' },
-  { id: 'finance', label: 'Personal Finance', color: 'violet' },
+  { id: 'finance', label: 'Personal Finance', color: 'blue' },
 ];
 
 // Color utility

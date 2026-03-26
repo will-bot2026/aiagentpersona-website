@@ -2,10 +2,10 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'When It's Time: The Compassionate Guide to Saying Goodbye to Your Dog | AI Agent Persona Guides',
-  description: 'Download the complete guide: When It's Time: The Compassionate Guide to Saying Goodbye to Your Dog. Instant PDF download, 24 pages of actionable content.',
+  title: "When It's Time: The Compassionate Guide to Saying Goodbye to Your Dog | AI Agent Persona Guides",
+  description: "Download the complete guide: When It's Time: The Compassionate Guide to Saying Goodbye to Your Dog. Instant PDF download, 24 pages of actionable content.",
   openGraph: {
-    title: 'When It's Time: The Compassionate Guide to Saying Goodbye to Your Dog',
+    title: "When It's Time: The Compassionate Guide to Saying Goodbye to Your Dog",
     description: 'Complete guide with actionable strategies and expert insights.',
     url: 'https://aiagentpersona.com/guides/when-its-time-goodbye',
     siteName: 'AI Agent Persona',
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'When It's Time: The Compassionate Guide to Saying Goodbye to Your Dog',
+    title: "When It's Time: The Compassionate Guide to Saying Goodbye to Your Dog",
     description: 'Complete guide — instant PDF download.',
   },
 };
@@ -28,7 +28,7 @@ export default function GuidePage() {
           {' > '}
           <Link href="/guides" className="hover:text-blue-600">Guides</Link>
           {' > '}
-          <span className="text-gray-900">When It's Time: The Compassionate Guide to Saying Goodbye to...</span>
+          <span className="text-gray-900">When It&apos;s Time: The Compassionate Guide to Saying Goodbye to...</span>
         </div>
       </div>
 
@@ -125,7 +125,7 @@ export default function GuidePage() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'Book',
-            name: 'When It's Time: The Compassionate Guide to Saying Goodbye to Your Dog',
+            name: "When It's Time: The Compassionate Guide to Saying Goodbye to Your Dog",
             description: 'Complete guide with actionable strategies based on real community research.',
             numberOfPages: 24,
             bookFormat: 'https://schema.org/EBook',
