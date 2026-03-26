@@ -276,6 +276,24 @@ const guidesData = [
     readTime: 18,
     createdAt: '2026-03-21T00:00:00Z',
   },
+  {
+    slug: 'am-i-ready-to-move-out-the-complete-financial-read',
+    title: 'Am I Ready to Move Out? The Complete Financial Readiness Guide',
+    subtitle: 'Know Exactly When You Can Afford to Live on Your Own',
+    description: 'Stop guessing and start knowing. This 18-page guide walks you through income thresholds, hidden move-in costs, emergency fund targets, credit score requirements, roommate math, rent negotiation tactics, and a 90-day action plan to get you from "thinking about it" to keys in hand -- financially prepared.',
+    pages: 18,
+    price: '24.99',
+    emoji: '🏠',
+    tags: ['Personal Finance', 'Moving Out', 'Budgeting', 'Renting', 'First Apartment'],
+    pdfFile: '/guides/am-i-ready-to-move-out-the-complete-financial-read.pdf',
+    polarUrl: 'https://buy.polar.sh/polar_cl_nADcMvoGUquJsJGONPCw2I4ojzyheEwvegKJ81Ue7yK',
+    category: 'finance',
+    categoryLabel: 'Personal Finance',
+    categoryColor: 'violet',
+    difficulty: 'Beginner',
+    readTime: 21,
+    createdAt: '2026-03-26T00:00:00Z',
+  },
 ];
 
 // Category definitions
@@ -285,6 +303,7 @@ const categories = [
   { id: 'crypto', label: 'Cryptocurrency & Investing', color: 'amber' },
   { id: 'ai-tech', label: 'AI & Technology', color: 'blue' },
   { id: 'health', label: 'Health & Fitness', color: 'rose' },
+  { id: 'finance', label: 'Personal Finance', color: 'violet' },
 ];
 
 // Color utility
