@@ -312,6 +312,24 @@ const guidesData = [
     readTime: 39,
     createdAt: '2026-03-26T00:00:00Z',
   },
+  {
+    slug: 'regulate-your-nervous-system-stop-making-mistakes',
+    title: 'Regulate Your Nervous System: Stop Making Mistakes at Work',
+    subtitle: 'You Are Not Careless. You Are Dysregulated.',
+    description: 'If you keep making the same mistakes at work despite trying harder, the problem is your nervous system -- not your character. This 22-page science-backed guide covers the Window of Tolerance, 3 breathing techniques for immediate regulation, physical reset tools, cognitive load management, the 3-step error recovery protocol, and a 30-day nervous system reset plan.',
+    pages: 22,
+    price: '29.99',
+    emoji: '🧠',
+    tags: ['Nervous System', 'Productivity', 'Workplace Stress', 'Mental Health', 'Work Performance', 'Anxiety'],
+    pdfFile: '/guides/regulate-your-nervous-system.pdf',
+    polarUrl: 'https://buy.polar.sh/polar_cl_nervousSystemGuideAiAgentPersona',
+    category: 'productivity',
+    categoryLabel: 'Productivity',
+    categoryColor: 'violet',
+    difficulty: 'Beginner',
+    readTime: 18,
+    createdAt: '2026-03-27T00:00:00Z',
+  },
 ];
 
 // Category definitions
