@@ -379,6 +379,27 @@ const colorClasses = {
     pill: 'bg-slate-100 text-slate-700 hover:bg-slate-200',
     pillActive: 'bg-slate-700 text-white',
   },
+  violet: {
+    tag: 'bg-violet-50 text-violet-700 border-violet-200',
+    button: 'bg-violet-600 hover:bg-violet-700 text-white',
+    border: 'border-violet-200',
+    pill: 'bg-violet-100 text-violet-700 hover:bg-violet-200',
+    pillActive: 'bg-violet-600 text-white',
+  },
+  purple: {
+    tag: 'bg-purple-50 text-purple-700 border-purple-200',
+    button: 'bg-purple-600 hover:bg-purple-700 text-white',
+    border: 'border-purple-200',
+    pill: 'bg-purple-100 text-purple-700 hover:bg-purple-200',
+    pillActive: 'bg-purple-600 text-white',
+  },
+  teal: {
+    tag: 'bg-teal-50 text-teal-700 border-teal-200',
+    button: 'bg-teal-600 hover:bg-teal-700 text-white',
+    border: 'border-teal-200',
+    pill: 'bg-teal-100 text-teal-700 hover:bg-teal-200',
+    pillActive: 'bg-teal-600 text-white',
+  },
 };
 
 export default function GuidesPage() {
@@ -456,7 +477,7 @@ export default function GuidesPage() {
   }, []);
 
   // Get color for category
-  const getColorClass = (color: keyof typeof colorClasses) => colorClasses[color];
+  const getColorClass = (color: keyof typeof colorClasses) => colorClasses[color] || colorClasses.slate;
 
   return (
     <div className="min-h-screen bg-white dark:bg-slate-950">
