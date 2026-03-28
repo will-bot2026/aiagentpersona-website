@@ -330,6 +330,24 @@ const guidesData = [
     readTime: 18,
     createdAt: '2026-03-27T00:00:00Z',
   },
+  {
+    slug: 'what-to-do-with-inherited-money-a-step-by-step-gui',
+    title: 'What to Do With Inherited Money: A Step-By-Step Guide to Not Screwing It Up',
+    subtitle: 'From the First 30 Days to a 90-Day Action Plan',
+    description: 'Received an inheritance? This 22-page guide covers everything: the 30-day stabilization rule, debt payoff priority order, emergency fund, retirement account strategies, index fund investing for non-experts, the house decision, how to handle family requests, finding a good financial advisor, the 8 classic inheritance mistakes, and a complete 90-day action plan.',
+    pages: 22,
+    price: '29.99',
+    emoji: '💰',
+    tags: ['Inheritance', 'Personal Finance', 'Investing', 'Financial Planning', 'Windfall'],
+    pdfFile: '/guides/what-to-do-with-inherited-money.pdf',
+    polarUrl: 'https://buy.polar.sh/polar_cl_inheritanceGuideAiAgentPersona',
+    category: 'finance',
+    categoryLabel: 'Personal Finance',
+    categoryColor: 'blue',
+    difficulty: 'Beginner',
+    readTime: 20,
+    createdAt: '2026-03-28T00:00:00Z',
+  },
 ];
 
 // Category definitions
