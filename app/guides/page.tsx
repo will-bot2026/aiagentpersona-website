@@ -366,6 +366,24 @@ const guidesData = [
     readTime: 17,
     createdAt: '2026-03-28T00:00:00Z',
   },
+  {
+    slug: 'puppy-sleep-training',
+    title: 'Puppy Sleep Training: The Complete Guide to Sleeping Through the Night',
+    subtitle: 'From 3 AM Wake-Ups to Full Nights in 4-8 Weeks',
+    description: "The definitive science-backed guide to getting your puppy to sleep through the night. Covers the biology of puppy sleep, setting up the perfect sleep environment, crate training done right, week-by-week milestones, how to handle nighttime wake-ups without reinforcing bad habits, and breed-specific adjustments. 10 chapters of real actionable advice.",
+    pages: 23,
+    price: '24.99',
+    emoji: '😴',
+    tags: ['Puppy Training', 'Sleep Training', 'Crate Training', 'New Puppy Owner', 'Night Waking'],
+    pdfFile: '/guides/puppy-sleep-training.pdf',
+    polarUrl: 'https://buy.polar.sh/polar_cl_VMtnxLtURyTfMk9cBv7SiheMisyX6tnyvpOYb0qd2fv',
+    category: 'pet-care',
+    categoryLabel: 'Pet Care',
+    categoryColor: 'emerald',
+    difficulty: 'Beginner',
+    readTime: 28,
+    createdAt: '2026-03-29T00:00:00Z',
+  },
 ];
 
 // Category definitions
