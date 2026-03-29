@@ -348,6 +348,24 @@ const guidesData = [
     readTime: 20,
     createdAt: '2026-03-28T00:00:00Z',
   },
+  {
+    slug: 'how-to-tell-your-manager-youre-leaving-the-complet',
+    title: "How to Tell Your Manager You're Leaving: The Complete Resignation Guide",
+    subtitle: 'The Conversation Nobody Teaches You How to Have',
+    description: "You have a new job. Now you have to say the words. This 19-page guide covers exactly what to say to your manager, when, how to write the resignation letter, managing the notice period, handling difficult reactions, exit interviews, references, and protecting your reputation for good.",
+    pages: 19,
+    price: '19.99',
+    emoji: '👔',
+    tags: ['Career', 'Resignation', 'Job Change', 'Professional Development', 'Workplace'],
+    pdfFile: '/guides/resignation-guide.pdf',
+    polarUrl: 'https://buy.polar.sh/polar_cl_resignationGuideAiAgentPersona',
+    category: 'finance',
+    categoryLabel: 'Career',
+    categoryColor: 'blue',
+    difficulty: 'Beginner',
+    readTime: 17,
+    createdAt: '2026-03-28T00:00:00Z',
+  },
 ];
 
 // Category definitions
