@@ -43,6 +43,11 @@ interface SaleRow {
   created_at: string;
 }
 
+interface UtmRow {
+  utm_source: string;
+  count: number;
+}
+
 async function supabaseQuery(table: string, params: Record<string, string>): Promise<SaleRow[]> {
   if (!SUPABASE_KEY) return [];
 
@@ -64,6 +69,47 @@ async function supabaseQuery(table: string, params: Record<string, string>): Pro
   }
 
   return resp.json();
+}
+
+async function fetchTopUtmSources(siteId: string): Promise<UtmRow[]> {
+  if (!SUPABASE_KEY) return [];
+
+  const thirtyDaysAgo = new Date(Date.now() - 30 * 24 * 60 * 60 * 1000).toISOString();
+
+  // Use PostgREST RPC or raw select with grouping via the ?select= syntax
+  // PostgREST doesn't support GROUP BY directly, so we fetch all UTM rows and aggregate in JS
+  const queryString = new URLSearchParams({
+    site_id: `eq.${siteId}`,
+    utm_source: 'not.is.null',
+    created_at: `gte.${thirtyDaysAgo}`,
+    select: 'utm_source',
+    limit: '1000',
+  }).toString();
+
+  const resp = await fetch(`${SUPABASE_URL}/rest/v1/live_sessions?${queryString}`, {
+    headers: {
+      apikey: SUPABASE_KEY,
+      Authorization: `Bearer ${SUPABASE_KEY}`,
+      'Content-Type': 'application/json',
+    },
+  });
+
+  if (!resp.ok) return [];
+
+  const rows: Array<{ utm_source: string }> = await resp.json();
+
+  // Aggregate in JS
+  const counts: Record<string, number> = {};
+  for (const row of rows) {
+    if (row.utm_source) {
+      counts[row.utm_source] = (counts[row.utm_source] || 0) + 1;
+    }
+  }
+
+  return Object.entries(counts)
+    .map(([utm_source, count]) => ({ utm_source, count }))
+    .sort((a, b) => b.count - a.count)
+    .slice(0, 10);
 }
 
 async function fetchSalesData() {
@@ -124,7 +170,7 @@ async function fetchAnalytics() {
   const weekAgo = getDateString(7);
   const monthAgo = getDateString(30);
 
-  const [convexResult, salesResult] = await Promise.allSettled([
+  const [convexResult, salesResult, utmResult] = await Promise.allSettled([
     Promise.all([
       queryConvex('stats:getLiveCount', { siteId: CLEARLYTICS_SITE_ID }),
       queryConvex('stats:getStatsBySiteId', { siteId: CLEARLYTICS_SITE_ID, startDate: today, endDate: today }),
@@ -132,6 +178,7 @@ async function fetchAnalytics() {
       queryConvex('stats:getStatsBySiteId', { siteId: CLEARLYTICS_SITE_ID, startDate: monthAgo, endDate: today }),
     ]),
     fetchSalesData(),
+    fetchTopUtmSources(CLEARLYTICS_SITE_ID),
   ]);
 
   const sales = salesResult.status === 'fulfilled' ? salesResult.value : {
@@ -140,6 +187,8 @@ async function fetchAnalytics() {
     last30d: { count: 0, revenue_cents: 0 },
     recentSales: [],
   };
+
+  const topUtmSources = utmResult.status === 'fulfilled' ? utmResult.value : [];
 
   let analyticsData: Record<string, unknown>;
   if (convexResult.status === 'fulfilled') {
@@ -186,7 +235,7 @@ async function fetchAnalytics() {
     };
   }
 
-  const result = { ...analyticsData, sales };
+  const result = { ...analyticsData, sales, topUtmSources };
   cache = { data: result, expiresAt: Date.now() + CACHE_TTL_MS };
   return result;
 }

@@ -41,16 +41,34 @@ export function ClearlyticsTracker() {
           ? new URL(document.referrer).hostname
           : '';
 
+      // Read UTM params from the current URL's query string
+      let utmSource: string | null = null;
+      let utmMedium: string | null = null;
+      let utmCampaign: string | null = null;
+      if (typeof window !== 'undefined') {
+        const params = new URLSearchParams(window.location.search);
+        utmSource = params.get('utm_source');
+        utmMedium = params.get('utm_medium');
+        utmCampaign = params.get('utm_campaign');
+      }
+
+      const payload: Record<string, unknown> = {
+        pathname: path,
+        referrerHostname,
+        timestamp: Date.now(),
+        viewportWidth: typeof window !== 'undefined' ? window.innerWidth : 1280,
+        tempSessionHash: getSessionHash(),
+      };
+
+      // Only include UTM fields if present (collect route uses ALLOWED_FIELDS check)
+      if (utmSource) payload.utmSource = utmSource;
+      if (utmMedium) payload.utmMedium = utmMedium;
+      if (utmCampaign) payload.utmCampaign = utmCampaign;
+
       await fetch('/api/clearlytics-proxy', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          pathname: path,
-          referrerHostname,
-          timestamp: Date.now(),
-          viewportWidth: typeof window !== 'undefined' ? window.innerWidth : 1280,
-          tempSessionHash: getSessionHash(),
-        }),
+        body: JSON.stringify(payload),
         // Use keepalive for reliability on page unload
         keepalive: true,
       });
