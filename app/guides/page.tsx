@@ -384,6 +384,24 @@ const guidesData = [
     readTime: 28,
     createdAt: '2026-03-29T00:00:00Z',
   },
+  {
+    slug: 'reactive-dog-social',
+    title: 'Reactive Dog Social Guide: From Lunging Stranger to Confident Friend',
+    subtitle: 'Transform Reactivity into Calm Confidence in 6-8 Weeks',
+    description: 'Your dog lunges and barks at other dogs because they WANT to say hello—they just don\'t know how. This 8-page guide teaches the exact counter-conditioning protocol used by professional trainers. Includes threshold work, leash training, managing the reactive phase, and long-term maintenance.',
+    pages: 8,
+    price: '19.99',
+    emoji: '🐕',
+    tags: ['Dog Training', 'Reactivity', 'Socialization', 'Counter-Conditioning', 'Leash Training'],
+    pdfFile: '/guides/reactive-dog-social-guide.pdf',
+    polarUrl: 'https://buy.polar.sh/polar_cl_reactivedog2026',
+    category: 'pet-care',
+    categoryLabel: 'Pet Care',
+    categoryColor: 'emerald',
+    difficulty: 'Intermediate',
+    readTime: 12,
+    createdAt: '2026-03-29T00:00:00Z',
+  },
 ];
 
 // Category definitions
