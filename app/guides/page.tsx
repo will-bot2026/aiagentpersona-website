@@ -402,6 +402,24 @@ const guidesData = [
     readTime: 12,
     createdAt: '2026-03-29T00:00:00Z',
   },
+  {
+    slug: 'puppy-home-alone',
+    title: 'Puppy Home Alone: The Complete Separation Anxiety Prevention Guide',
+    subtitle: 'Leave Your Puppy Confidently Without Creating Lifetime Anxiety',
+    description: 'Your puppy screams when you leave. This 9-page guide teaches the exact 3-phase protocol (microabsences → short absences → extended absences) to prevent separation anxiety before it starts. Includes potty training during alone time, safe space setup, handling regression, and long-term maintenance.',
+    pages: 9,
+    price: '19.99',
+    emoji: '🏠',
+    tags: ['Puppy Training', 'Separation Anxiety', 'Independence', 'Alone Time', 'Anxiety Prevention'],
+    pdfFile: '/guides/puppy-home-alone-guide.pdf',
+    polarUrl: 'https://buy.polar.sh/polar_cl_puppyhomealone2026',
+    category: 'pet-care',
+    categoryLabel: 'Pet Care',
+    categoryColor: 'emerald',
+    difficulty: 'Beginner',
+    readTime: 10,
+    createdAt: '2026-03-30T00:00:00Z',
+  },
 ];
 
 // Category definitions
