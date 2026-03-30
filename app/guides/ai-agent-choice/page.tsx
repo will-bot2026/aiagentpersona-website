@@ -118,7 +118,7 @@ export default function AIAgentChoicePage() {
                 </div>
 
                 <a
-                  href="https://buy.polar.sh/polar_cl_lnsieGqZub1bsYsVtvO8xDIRacqYIURmQJYSQ2CV3Qm"
+                  href="https://clearlytics-sigma.vercel.app/l/ai-agent-guide"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block w-full bg-blue-600 text-white text-center py-3 rounded-lg font-bold hover:bg-blue-700 transition mb-3"

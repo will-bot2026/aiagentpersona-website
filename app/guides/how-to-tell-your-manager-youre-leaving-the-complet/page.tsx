@@ -87,7 +87,7 @@ export default function ResignationGuidePage() {
                     <div className="text-sm text-gray-500">Instant PDF Download</div>
                   </div>
                   <a
-                    href="https://buy.polar.sh/polar_cl_resignationGuideAiAgentPersona"
+                    href="https://clearlytics-sigma.vercel.app/l/resignation-guide"
                     className="block w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg text-center transition-colors mb-4"
                     target="_blank"
                     rel="noopener noreferrer"

@@ -174,7 +174,7 @@ export default function JobLossSurvivalPlanPage() {
                   </div>
 
                   <a
-                    href="https://buy.polar.sh/polar_cl_5Ur6jD4lMjTuDllFtpk3l4rIU4DIIjmjDk7Sq2frw3G"
+                    href="https://clearlytics-sigma.vercel.app/l/job-loss-plan"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-6 rounded-xl text-center transition-colors text-lg mb-4"
@@ -248,7 +248,7 @@ export default function JobLossSurvivalPlanPage() {
               price: '24.99',
               priceCurrency: 'USD',
               availability: 'https://schema.org/InStock',
-              url: 'https://buy.polar.sh/polar_cl_5Ur6jD4lMjTuDllFtpk3l4rIU4DIIjmjDk7Sq2frw3G',
+              url: 'https://clearlytics-sigma.vercel.app/l/job-loss-plan',
             },
             keywords: 'job loss guide, lost my job what to do, unemployment benefits, job search strategy, financial recovery after job loss',
           }),

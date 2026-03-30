@@ -160,7 +160,7 @@ export default function MovingOutGuidePage() {
                   </div>
 
                   <a
-                    href="https://buy.polar.sh/polar_cl_nADcMvoGUquJsJGONPCw2I4ojzyheEwvegKJ81Ue7yK"
+                    href="https://clearlytics-sigma.vercel.app/l/move-out-ready"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block w-full bg-violet-600 hover:bg-violet-700 text-white font-bold py-4 px-6 rounded-xl text-center transition-colors text-lg mb-4"
@@ -234,7 +234,7 @@ export default function MovingOutGuidePage() {
               price: '24.99',
               priceCurrency: 'USD',
               availability: 'https://schema.org/InStock',
-              url: 'https://buy.polar.sh/polar_cl_nADcMvoGUquJsJGONPCw2I4ojzyheEwvegKJ81Ue7yK',
+              url: 'https://clearlytics-sigma.vercel.app/l/move-out-ready',
             },
             keywords: 'moving out financial guide, am I ready to move out, first apartment budget, rent affordability',
           }),

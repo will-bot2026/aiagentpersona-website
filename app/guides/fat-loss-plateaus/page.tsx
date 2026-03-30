@@ -118,7 +118,7 @@ export default function FatLossPlateausPage() {
                 </div>
 
                 <a
-                  href="https://buy.polar.sh/polar_cl_9F0SQHPiwDs53iqr4eVcrdhSMrA0EEZL8hNkM1t2S6e"
+                  href="https://clearlytics-sigma.vercel.app/l/fat-loss-guide"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block w-full bg-rose-600 text-white text-center py-3 rounded-lg font-bold hover:bg-rose-700 transition mb-3"

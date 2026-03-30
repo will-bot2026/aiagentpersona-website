@@ -138,7 +138,7 @@ export default function PuppyHealthPage() {
                 </div>
 
                 <a
-                  href="https://buy.polar.sh/polar_cl_y3Ah8rsCoRXYJaUHLm9qzEF0e8FHez3fusNbK1Wh1de"
+                  href="https://clearlytics-sigma.vercel.app/l/puppy-health"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block w-full bg-red-600 text-white text-center py-3 rounded-lg font-bold hover:bg-red-700 transition mb-3"

@@ -106,7 +106,7 @@ export default function InheritanceGuidePage() {
                   </div>
 
                   <a
-                    href="https://buy.polar.sh/polar_cl_inheritanceGuideAiAgentPersona"
+                    href="https://clearlytics-sigma.vercel.app/l/inherited-money"
                     className="block w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg text-center transition-colors mb-4"
                     target="_blank"
                     rel="noopener noreferrer"

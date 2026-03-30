@@ -118,7 +118,7 @@ export default function CryptoScamsPage() {
                 </div>
 
                 <a
-                  href="https://buy.polar.sh/polar_cl_PbGEKCrfxmd1KjR5x3dFcOl2JlsxtsWH7tgbB14Mjbu"
+                  href="https://clearlytics-sigma.vercel.app/l/crypto-scams"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block w-full bg-amber-600 text-white text-center py-3 rounded-lg font-bold hover:bg-amber-700 transition mb-3"

@@ -128,7 +128,7 @@ export default function DogRehomingRegretsPage() {
                 </div>
 
                 <a
-                  href="https://buy.polar.sh/polar_cl_jKmBGhW78JtOQC5ApHXLhScdiVtXdYHhyKUpR4f2iFE"
+                  href="https://clearlytics-sigma.vercel.app/l/dog-rehoming"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block w-full bg-emerald-600 text-white text-center py-3 rounded-lg font-bold hover:bg-emerald-700 transition mb-3"

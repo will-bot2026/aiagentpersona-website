@@ -128,7 +128,7 @@ export default function DogFosteringAcceleratorPage() {
                 </div>
 
                 <a
-                  href="https://buy.polar.sh/polar_cl_cBnChVYGusG2gpxRMIvwyzTaTALl8JYHvBlEt49tKwE"
+                  href="https://clearlytics-sigma.vercel.app/l/dog-fostering"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block w-full bg-emerald-600 text-white text-center py-3 rounded-lg font-bold hover:bg-emerald-700 transition mb-3"

@@ -110,7 +110,7 @@ export default function GuidePage() {
                 </div>
 
                 <a
-                  href="https://buy.polar.sh/polar_cl_f85-326d0bbaa0c6"
+                  href="https://clearlytics-sigma.vercel.app/l/no-kill-shelters"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block w-full bg-emerald-600 text-white text-center py-3 rounded-lg font-bold hover:bg-emerald-700 transition mb-3"

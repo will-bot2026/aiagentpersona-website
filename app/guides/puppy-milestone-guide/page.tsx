@@ -128,7 +128,7 @@ export default function PuppyMilestoneGuidePage() {
                 </div>
 
                 <a
-                  href="https://buy.polar.sh/polar_cl_93a7f9a4-8d45-4358-bd7a-5bbec4c03c45"
+                  href="https://clearlytics-sigma.vercel.app/l/puppy-milestones"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block w-full bg-emerald-600 text-white text-center py-3 rounded-lg font-bold hover:bg-emerald-700 transition mb-3"
